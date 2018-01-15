@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="/android_asset/test.css">
+</head>
+<body>
+<div>test!!!</div>
+
+<div id="myTest">is show div</div>
+<button onclick="test()">add</button>
+</body>
+<script type="text/javascript">
+    alert('success')//alert 是无效的,除非重写
+
+    function test(){
+        alert(123);
+        var obj = document.getElementById('myTest');
+        obj.style.display = 'none';
+        console.log(this)
+    }
+</script>
+</html>
